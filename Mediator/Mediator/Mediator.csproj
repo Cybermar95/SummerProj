@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{07D384AB-89D7-4F16-B605-FCC203C0B545}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mediator</RootNamespace>
+    <AssemblyName>Mediator</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lidgren.Network">
+      <HintPath>Libr\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>.\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TaskLib">
+      <HintPath>..\..\TaskLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CORE\St_2 - St_4 Task Handler\MediatorTask.cs" />
+    <Compile Include="CORE\St_2 - St_4 Task Handler\MediatorTaskHandler.cs" />
+    <Compile Include="Data_Client\Patient.cs" />
+    <Compile Include="CORE\St_5 Send Response to Client\ClientSender.cs" />
+    <Compile Include="Fhir\DataElement\CodeableConcept.cs" />
+    <Compile Include="Fhir\DataElement\Coding.cs" />
+    <Compile Include="Fhir\DataElement\Extension.cs" />
+    <Compile Include="Fhir\DataElement\HumanName.cs" />
+    <Compile Include="Fhir\DataElement\Identifier.cs" />
+    <Compile Include="Fhir\DataElement\Period.cs" />
+    <Compile Include="Fhir\DataElement\Quantity.cs" />
+    <Compile Include="Fhir\DataElement\Range.cs" />
+    <Compile Include="Fhir\DataElement\Ratio.cs" />
+    <Compile Include="Fhir\DataElement\Reference.cs" />
+    <Compile Include="Fhir\DataElement\Repeat.cs" />
+    <Compile Include="Fhir\DataElement\Timing.cs" />
+    <Compile Include="Fhir\D_E_Constructor.cs" />
+    <Compile Include="Fhir\Resourse\Encounter\Encounter.cs" />
+    <Compile Include="Fhir\Resourse\Encounter\participant.cs" />
+    <Compile Include="Fhir\Resourse\MedicationDispense\dosageInstruction.cs" />
+    <Compile Include="Fhir\Resourse\MedicationDispense\MedicationDispense.cs" />
+    <Compile Include="Fhir\Resourse\MedicationOrder\dosageInstruction.cs" />
+    <Compile Include="Fhir\Resourse\MedicationOrder\MedicationOrder.cs" />
+    <Compile Include="Fhir\Resourse\Medication\ingredient.cs" />
+    <Compile Include="Fhir\Resourse\Medication\Medication.cs" />
+    <Compile Include="Fhir\Resourse\Medication\package.cs" />
+    <Compile Include="Fhir\Resourse\Medication\product.cs" />
+    <Compile Include="Fhir\Resourse\Organization\Organization.cs" />
+    <Compile Include="Fhir\Resourse\Patient\Patient.cs" />
+    <Compile Include="Fhir\Resourse\Patient\PatientExtension.cs" />
+    <Compile Include="Fhir\Resourse\Practitioner\Practitioner.cs" />
+    <Compile Include="Fhir\Resourse\Practitioner\practitionerRole.cs" />
+    <Compile Include="Fhir\Resourse\Substance\ingredient.cs" />
+    <Compile Include="Fhir\Resourse\Substance\instance.cs" />
+    <Compile Include="Fhir\Resourse\Substance\Substance.cs" />
+    <Compile Include="Support Class\MediatorSettings.cs" />
+    <Compile Include="CORE\St_2 Prepare Fhir Msg Request\RequestBuilder.cs" />
+    <Compile Include="CORE\St_3 Get Response From Server\RequestPoolMananger.cs" />
+    <Compile Include="CORE\St_4 Prepare Response to Client\ResponseBuilder.cs" />
+    <Compile Include="CORE\St_2 Prepare Fhir Msg Request\ServerQueryBuilder.cs" />
+    <Compile Include="CORE\St_3 Get Response From Server\ServerItem.cs" />
+    <Compile Include="CORE\St_4 Prepare Response to Client\ToClientConverter.cs" />
+    <Compile Include="CORE\St_2 Prepare Fhir Msg Request\ToServerConverter.cs" />
+    <Compile Include="CORE\St_5 Send Response to Client\DeliveryResponse.cs" />
+    <Compile Include="MediatorMain.cs" />
+    <Compile Include="CORE\St_1 Recieve Data From Client\ClientReceiver.cs" />
+    <Compile Include="Support Class\Log.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
