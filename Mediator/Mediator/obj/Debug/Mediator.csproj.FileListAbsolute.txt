@@ -25,3 +25,6 @@ C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\obj\Debug\Mediator.csprojR
 C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\obj\Debug\Mediator.exe
 C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\obj\Debug\Mediator.pdb
 C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\bin\Debug\Mediator.exe.config
+C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\bin\Debug\Mediator.exe
+C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\bin\Debug\Mediator.pdb
+C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\bin\Debug\Lidgren.Network.dll
