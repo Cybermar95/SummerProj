@@ -21,10 +21,6 @@ C:\Users\Dalamar\Desktop\FhirProject\Mediator\Mediator\bin\Debug\Mediator.exe
 C:\Users\Dalamar\Desktop\FhirProject\Mediator\Mediator\bin\Debug\Mediator.pdb
 C:\Users\Dalamar\Desktop\FhirProject\Mediator\Mediator\bin\Debug\Lidgren.Network.dll
 C:\Users\Dalamar\Desktop\FhirProject\Mediator\Mediator\bin\Debug\TaskLib.dll
-C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\bin\Debug\Mediator.exe.config
+C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\obj\Debug\Mediator.csprojResolveAssemblyReference.cache
 C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\obj\Debug\Mediator.exe
 C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\obj\Debug\Mediator.pdb
-C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\obj\Debug\Mediator.csprojResolveAssemblyReference.cache
-C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\bin\Debug\Mediator.exe
-C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\bin\Debug\Mediator.pdb
-C:\Users\Dalamar\Desktop\SummerProj\Mediator\Mediator\bin\Debug\Lidgren.Network.dll
